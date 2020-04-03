@@ -28,8 +28,8 @@ import okhttp3.HttpUrl;
 
 public class PersistentCookieJar implements ClearableCookieJar {
 
-    private CookieCache cache;
-    private CookiePersistor persistor;
+    protected CookieCache cache;
+    protected CookiePersistor persistor;
 
     public PersistentCookieJar(CookieCache cache, CookiePersistor persistor) {
         this.cache = cache;
